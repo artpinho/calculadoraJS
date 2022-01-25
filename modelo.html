@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Exercício</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Calculadora de HE</h1>
+  </header>
+  <section>
+    <div id="info">
+      Qual seu salário atual? <strong><font color="red">*</font></strong>
+      <font color="gray"</font>R$</font><input type="number" id="salbase" name="salbase" style="width: 4em;"><br>
+      <br>
+      Qual sua carga horária semanal? <strong><font color="red">*</font></strong>
+      <input type="number" id="cargahora" name="cargahora" style="width: 3em;">
+      <br><br><font size="1" color="red">* Campos obrigatórios.</font>
+    </div>
+    <div id="adicionais">
+      <br><br>
+      Hora Extra <input type="number" id="contHe1" name="contHe1" style="width: 3em;">
+      <input type="checkbox" name="dobrohe1" id="dobrohe1"> 100%
+      <input type="checkbox" name="adn1" id="adn1"> Adicional Noturno <br>
+      Hora Extra <input type="number" id="contHe2" name="contHe2" style="width: 3em;">
+      <input type="checkbox" name="dobrohe2" id="dobrohe2"> 100%
+      <input type="checkbox" name="adn2" id="adn2"> Adicional Noturno <br>
+      Hora Extra <input type="number" id="contHe3" name="contHe3" style="width: 3em;">
+      <input type="checkbox" name="dobrohe3" id="dobrohe3"> 100%
+      <input type="checkbox" name="adn3" id="adn3"> Adicional Noturno <br>
+      Hora Extra <input type="number" id="contHe4" name="contHe4" style="width: 3em;">
+      <input type="checkbox" name="dobrohe4" id="dobrohe4"> 100%
+      <input type="checkbox" name="adn4" id="adn4"> Adicional Noturno <br><br>
+     </div> 
+     <div>
+      <br>Possui dependentes? <input type="number" name="dependentes" id="dependentes" style="width: 2em;">
+      <br><br><br>
+    </div>
+    <div id="botao"> 
+      <input type="button" value="Calcular" onclick="calcular()">
+    </div>    
+    <div id="res"><br>
+      <label id="respostas">Valor/Hora:</label>
+      <div id="vh"></div>
+      <label id="respostas">HE/Mês: </label> 
+      <div id="hm"></div>
+      <label id="respostas">INSS: </label> 
+      <div id="inss"></div>
+      <label id="respostas">IRPF: </label> 
+      <div id="irpf"></div>
+      <label id="respostas">Bruto: </label> 
+      <div id="bruto"></div>
+      <label id="respostas">Líquido: </label> 
+      <div id="liquido"></div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy;Artenir Pinho</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
